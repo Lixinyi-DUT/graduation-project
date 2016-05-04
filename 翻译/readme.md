@@ -88,3 +88,8 @@ LSB\left( {\left\lfloor {\frac{{\left( {62 - 1} \right)}}{2}} \right\rfloor  + 8
 x'{'_i} &= x{'_i} + 4{k_1} = 63 + 4 \times 0 = 63\\
 x'{'_{i + 1}} &= x{'_{i + 1}} + 2{k_2} = 81 + 2 \times 1 = 83
 \end{align}$$在这里，我们有$d'' = \left| {83 - 63} \right| = 20 \ge T$和$$LSB\left( {63} \right) = {m_i},\quad LSB\left( {\left\lfloor {\left( {\frac{{63}}{2}} \right)} \right\rfloor  + 83} \right) = {m_{i + 1}}$$
+
+###数据提取
+为了提取数据，我们先从伪装图片提取辅助信息，即区域分块大小$Bz$和阈值$T$。然后我们做的工作和数据嵌入的第一步完全相同。伪装图像被划分为$Bz \times Bz$的分块区域，分块根据秘钥$key_1$生成的随机角度旋转。结果图像重排为一个行向量$V'$，最后，我们通过把$V'$划分为不重叠的两个连续的像素得到嵌入单元。
+
+我们根据由秘钥$key_2$生成的伪随机顺序遍历绝对差大于等于阈值$T$的嵌入单元，直至所有的隐藏比特都被完全提取。对于每个合格的嵌入单元，也就是满足$\left| {x{'_{i + 1}} - x{'_i}} \right| \ge T$的$\left( {x{'_i},x{'_{i + 1}}} \right)$，我们这样提取两个秘密比特$m_i,m_{i+1}$:$${m_i} = LSB\left( {x'{'_i}} \right),\quad {m_{i + 1}} = LSB\left( {\left\lfloor {\frac{{x{'_i}}}{2}} \right\rfloor  + x{'_{i + 1}}} \right)$$，例如，我们处理单元$\left( {x{'_i},x{'_{i + 1}}} \right)=\left(63,83\right)$，$T=19$，我们最终这样得到秘密比特$${m_i} = LSB\left( {63} \right) = 1,\qquad {m_{i + 1}} = LSB\left( {\left\lfloor {\frac{{63}}{2}} \right\rfloor  + 83} \right) = 0$$
