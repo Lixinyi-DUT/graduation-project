@@ -4,3 +4,4 @@ fre_local=color_frequency(block);
 differences=fre_global-fre_local;
 diff_square=sum(differences.*differences);
 end
+
