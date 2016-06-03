@@ -1,6 +1,5 @@
-for em=0.05:0.05:0.5
-pic=1338;loc=5;
-em_rate=em/5;
+for em_rate=0.05:0.05:7
+pic=1338;loc=10;
 x1=zeros(pic*loc,1);x2=x1;x3=x2;x4=x3;y1=x1;
 scale=sprintf('-%04d-%02d-%03d',[pic,loc,em_rate*100]);
 path='F:\\ucid_gray\\';
