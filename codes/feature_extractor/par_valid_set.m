@@ -1,17 +1,15 @@
-for em_rate=0.05:0.05:7
-pic=1338;loc=10;
+pic=200;loc=10;
 x1=zeros(pic*loc,1);x2=x1;x3=x2;x4=x3;y1=x1;
-scale=sprintf('-%04d-%02d-%03d',[pic,loc,em_rate*100]);
+scale=sprintf('-%04d-%02d',[pic,loc]);
 path='F:\\ucid_gray\\';
 id=sprintf('%05d',1);
 parfor i=1:pic*loc
-    n=floor((i-1)/loc)+1;
-    id=sprintf('%05d',n);
+    id=sprintf('%05d',randi([1,1338],1));
     cover=imread([path,id,'.png']);
     [width,height]=size(cover);
-    %secret_length=floor((width*height*em_rate)/8)
-    secret_length_max=floor((width*height*em_rate)/8)
-    secret_length=[]
+    secret_length=floor((width*height*0.5)/8)
+    %secret_length_max=floor((width*height*0.7)/8)
+    %secret_length=randi([0,secret_length_max],1)
     secret_text=randi([0,255],[1,secret_length])
     block_width=ceil(sqrt(secret_length*8));
     x=randi([1,width-block_width],1);
@@ -29,7 +27,6 @@ parfor i=1:pic*loc
     y1(i,1)=RSAttack(stego);
     %train_set(i,1:5)=[var(digit_block(:)),sc_match(block,secret_text),local_diff(block,cover),image_smooth(block),RSAttack(stego)];
 end
-train_set=[x1,x2,x3,x4,y1];
+valid_set=[x1,x2,x3,x4,y1];
 time=datestr(now,30);
-save(['data/',time,scale,'.mat'],'train_set');
-end
+save(['data/valid',time,scale,'.mat'],'valid_set');

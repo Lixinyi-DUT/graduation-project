@@ -17,10 +17,14 @@ S_FM=RSU_FM[:,2]
 R_M=RSU_M[:,1]
 S_M=RSU_M[:,2]
 X=linspace(0,100,11,endpoint=True);
-plt.plot(X,R_FM,label=r'$R_{-M}$')
-plt.plot(X,R_M,label=r'$R_{M}$')
-plt.plot(X,S_FM,label=r'$S_{-M}$')
-plt.plot(X,S_M,label=r'$S_{M}$')
-plt.legend(loc='upper right')
+plt.plot(X,R_FM,label=r'$R_{-M}$',linestyle='--',marker='o',color='red',linewidth=1.5)
+plt.plot(X,R_M,label=r'$R_M$',linestyle='-',color='red',marker='s',linewidth=1.5)
+plt.plot(X,S_FM,label=r'$S_{-M}$',linestyle='--',color='blue',marker='D',linewidth=1.5)
+plt.plot(X,S_M,label=r'$S_M$',linestyle='-',color='blue',marker='^',linewidth=1.5)
+plt.grid(1)
+plt.legend(loc=0)
+plt.xlabel(u'隐写率（%）',fontproperties=font)
+plt.ylabel(u'组数',fontproperties=font)
+plt.tight_layout()
+plt.savefig(r'F:\graduation-project\codes\plots\ill\rsdemo.png',dpi=100)
 plt.show()
-print(RSU_M[:,1])

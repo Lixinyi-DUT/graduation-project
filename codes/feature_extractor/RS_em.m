@@ -1,4 +1,4 @@
-cover=imread('F:\\ucid_gray\\00340.png');
+cover=imread('F:\\ucid_gray\\00345.png');
 RSU_FM=zeros(11,3);
 RSU_M=zeros(11,3);
 for i=0:10
