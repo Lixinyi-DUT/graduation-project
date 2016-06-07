@@ -12,10 +12,10 @@ data=sio.loadmat('F:\\graduation-project\\codes\\feature_extractor\\data\\rsdata
 RSU_FM=data['RSU_FM']
 RSU_M=data['RSU_M']
 
-R_FM=RSU_FM[:,1]
-S_FM=RSU_FM[:,2]
-R_M=RSU_M[:,1]
-S_M=RSU_M[:,2]
+R_FM=RSU_FM[:,0]
+S_FM=RSU_FM[:,1]
+R_M=RSU_M[:,0]
+S_M=RSU_M[:,1]
 X=linspace(0,100,11,endpoint=True);
 plt.plot(X,R_FM,label=r'$R_{-M}$',linestyle='--',marker='o',color='red',linewidth=1.5)
 plt.plot(X,R_M,label=r'$R_M$',linestyle='-',color='red',marker='s',linewidth=1.5)

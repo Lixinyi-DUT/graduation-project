@@ -20,7 +20,8 @@ plt.grid(1)
 plt.tight_layout()
 plt.savefig('F:\graduation-project\codes\plots\ill\hist_stego.png',dpi=75)
 #plt.legend(loc='upper right')
-
+plt.tight_layout()
+plt.savefig(r'F:\graduation-project\codes\plots\ill\hist.png',dpi=100)
 
 plt.show()
 #print(im.flatten())

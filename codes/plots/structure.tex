@@ -1,5 +1,6 @@
 % !TEX program = xelatex
 \documentclass[tikz]{standalone}
+%\documentclass[preview,border=4mm,convert={density=600,outext=.png}]{standalone}
 \usepackage{ctex}
 \usepackage{epstopdf}
 \usetikzlibrary{arrows,decorations.markings}
@@ -15,10 +16,10 @@
     \draw[dashed] (13,0) rectangle node{秘密消息} (23,1);
     \draw[fill=gray,fill opacity=0.3](23,0) rectangle node{$\cdots$}(26,1) ;
     \draw [decorate,decoration={brace,amplitude=10pt,mirror}]
-    (0,0) -- (5,0) node [black,midway,above,sloped,yshift=-30pt]{前$n_1$位};
-    \draw [decorate,decoration={brace,amplitude=10pt,mirror}] (5,0) -- (10,0) node [black,midway,above,sloped,yshift=-30pt]{接下来$n_2$位};
+    (0,0) -- (5,0) node [black,midway,above,sloped,yshift=-40pt]{前$l_1$位};
+    \draw [decorate,decoration={brace,amplitude=10pt,mirror}] (5,0) -- (10,0) node [black,midway,above,sloped,yshift=-40pt]{接下来$l_2$位};
     \filldraw(13,0) circle (1pt) node[below]{$\left(x_0,y_0\right)$};
-    \draw [decorate,decoration={brace,amplitude=10pt,mirror}] (13,0) -- (23,0) node [black,midway,above,sloped,yshift=-30pt]{$l \times 8$位};
+    \draw [decorate,decoration={brace,amplitude=10pt,mirror}] (13,0) -- (23,0) node [black,midway,above,sloped,yshift=-40pt]{$l \times 8$位};
     \draw [decorate,decoration={brace,amplitude=10pt},yshift=5pt] (0,1) -- (26,1) node [black,midway,above,sloped,yshift=10pt]{$m \times n$位二进制数据};
   \end{tikzpicture}
   
