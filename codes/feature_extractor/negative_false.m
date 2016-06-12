@@ -1,7 +1,7 @@
 path='F:\\data\\';
 test_set=0;
 acc=zeros(7,10);
-th=-0.25;
+th=0.05;
 
 p=zeros(1338*5,7);
 for i=1:10

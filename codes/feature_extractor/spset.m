@@ -1,7 +1,7 @@
 for em_rate=0.05:0.05:5
 pic=20;loc=10;
 x1=zeros(pic*loc,1);x2=x1;x3=x2;x4=x3;y1=x1;
-scale=sprintf('sp%03d',[pic,loc,em_rate*100]);
+scale=sprintf('chi2%03d',[em_rate*100]);
 path='F:\\ucid_gray\\';
 parfor i=1:pic*loc
     n=floor((i-1)/loc)+1;
@@ -25,9 +25,10 @@ parfor i=1:pic*loc
     x2(i,1)=sc_match(block,secret_text);
     x3(i,1)=local_diff(block,cover);
     x4(i,1)=image_smooth(block);
-    y1(i,1)=sp(stego);
+   % y1(i,1)=sp(stego);
+   y1(i,1)=(stego);
     %sptest_set(i,1:5)=[var(digit_block(:)),sc_match(block,secret_text),local_diff(block,cover),image_smooth(block),RSAttack(stego)];
 end
 sptest_set=[x1,x2,x3,x4,y1];
-save(['data/',scale,'.mat'],'sptest_set');
+save(['data/',scale,'.mat'],'chi2test_set');
 end
