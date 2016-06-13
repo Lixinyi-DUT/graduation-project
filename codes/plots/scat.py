@@ -51,4 +51,5 @@ plt.grid(1)
 
 plt.tight_layout()
 plt.savefig(r'F:\graduation-project\codes\plots\ill\scatter.png',dpi=100)
+plt.savefig(r'F:\graduation-project\presentation\images\scatter.pdf')
 plt.show()

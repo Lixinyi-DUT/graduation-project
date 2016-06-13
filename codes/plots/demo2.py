@@ -8,20 +8,21 @@ from matplotlib.font_manager import FontProperties
 
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus']=False
-im=imread('F:\\l.png')
+im=imread('F:\\graduation-project\codes\exampleimage\lena.png')
+im2=imread('F:\graduation-project\codes\output\stego(hello_world).png')
 
 fig = plt.figure()
 
 ax1 = fig.add_subplot(121)
-ax1.imshow(im,cmap='gray')
+ax1.imshow(im)
 ax1.set_title(u'(a) 原图像（载体）')
 
 ax1 = fig.add_subplot(122)
-ax1.imshow(im&254,cmap='gray')
-ax1.set_title(u'(b) 去掉LSB位后的图像')
+ax1.imshow(im2)
+ax1.set_title(u'(b) 伪装图像')
 
 plt.tight_layout()
-plt.savefig('F:\graduation-project\codes\plots\ill\demo1.png',dpi=100)
-plt.savefig('F:\graduation-project\codes\plots\ill\demo1.pdf')
+plt.savefig('F:\graduation-project\codes\plots\ill\demo2.png',dpi=100)
+plt.savefig('F:\graduation-project\codes\plots\ill\demo2.pdf')
 
 plt.show()
