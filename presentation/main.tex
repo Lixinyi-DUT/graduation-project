@@ -13,10 +13,9 @@
 \usetikzlibrary{arrows,decorations.markings}
 \usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{calc}
-\renewcommand{\today}{\number\year 年\number\month 月\number\day 日}
+\renewcommand{\today}{2016 年 6 月 14 日}
  \setbeamerfont{title}{size=\LARGE}
  \setbeamerfont{subtitle}{size=\LARGE}
-%\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol \insertframenavigationsymbol \insertsubsectionnavigationsymbol \insertsectionnavigationsymbol \insertdocnavigationsymbol \insertbackfindforwardnavigationsymbol}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -26,7 +25,7 @@
 \subtitle{The Study and Improvement of SVM-based LSB Steganography}
 \author[扬州计划]{李欣宜}
 \institute[]{大连理工大学}
-\date{\number\year 年\number\month 月\number\day 日}
+\date{\faCalendar{ } 2016 年 6 月 13 日}
 \subject{毕业设计}
 
 \begin{document}
@@ -36,7 +35,11 @@
 \end{frame}
 
 \begin{frame}{概览}
-  \tableofcontents
+  \begin{columns}
+    \begin{column}{.5\textwidth}
+        \tableofcontents
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{选题背景}
@@ -45,13 +48,13 @@
   \begin{alertblock}{LSB隐写术（LSB Steganography）}
     \begin{itemize}
       \item 最早接触隐写术的概念在《密码学》课堂上
-      \item 因为感兴趣曾经使用Wolfram Mathematica实现了基本的隐写程序，并写入了博客（\url{https://www.yangzhou301.com/2015/11/15/861014670/}）
+      \item 因为感兴趣曾经使用Wolfram Mathematica实现了基本的隐写程序，并写入了博客（\faChain \url{https://www.yangzhou301.com/2015/11/15/861014670/}）
     \end{itemize}
   \end{alertblock}
   \begin{block}{支持向量机（SVM）}
     \begin{itemize}
       \item 机器学习是现在非常流行的研究方向，可以在很多领域实现优化
-      \item 完成过SVM相关的实战（\url{https://github.com/Lixinyi-DUT/machine_learning_techniques}）
+      \item 完成过SVM相关的实战（\faChain \url{https://github.com/Lixinyi-DUT/machine_learning_techniques}）
     \end{itemize}
   \end{block}
   所以在毕设中尝试完成应用SVM针对LSB图像隐写进行优化。
@@ -237,13 +240,13 @@
 \end{frame}
 
 \begin{frame}{引入SVM的隐写系统}
-	\begin{figure}
-   \tikz[decoration={
+  \centering
+  \begin{tikzpicture}[decoration={
 	 	markings,
 	 	mark=at position 1 with {\arrow[scale=2]{angle 90}};
 	 },scale=0.34]
 	 \input{images/new-stego.tikz}
- \end{figure}
+ \end{tikzpicture}
 \end{frame}
 
 \subsection{SVM的训练和预测}
@@ -360,7 +363,7 @@
 \begin{frame}{Thanks}
 	\centering
 	论文中用到的全部源代码（包括本幻灯片），数据，图像，文档见\\
-	\url{https://github.com/Lixinyi-DUT/graduation-project}
+	\faChain \url{https://github.com/Lixinyi-DUT/graduation-project}
 \end{frame}
 
 \end{document}
