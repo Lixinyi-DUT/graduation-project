@@ -81,11 +81,13 @@
   \item[秘密消息] 需要隐藏的信息
   \item[载体cover] 用来隐藏信息的文件，多媒体文件因为包含的数据巨大，适合作为载体。在本文中选择像素图像为载体。
   \item[伪装stego] 隐藏了秘密消息的文件，与载体图像看上去没有区别
-  \item[最低有效位LSB] 数据的最低位，对于8位二进制为第0位
+  \item[最低有效位LSB] 数据的最低位，对于8位二进制为第0位 \note{Least Significant Bit}
 \end{description}
 \begin{alertblock}<3->{秘密消息}
   `a' = 0b\textcolor<4>{alertTitleBlockColor}{01100001}
 \end{alertblock}
+
+\pause
 
 \input{table/lsb.tex}
 
