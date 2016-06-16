@@ -41,6 +41,7 @@ plt.xlabel(r'$E_0$(%)')
 plt.ylabel(r'$E_1$(%)')
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus']=False
+rcParams["pdf.fonttype"] = 42
 cb2.set_ticks([2,3,4,5])
 cb2.set_label(u'多项式核的次数$d$',labelpad=20,rotation=270,fontsize=14)
 cbar.set_ticks([1,2,3,4,5])

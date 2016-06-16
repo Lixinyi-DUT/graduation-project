@@ -16,14 +16,14 @@
 \renewcommand{\today}{2016 年 6 月 14 日}
  \setbeamerfont{title}{size=\LARGE}
  \setbeamerfont{subtitle}{size=\LARGE}
-
+ \setbeamerfont{institute}{size=\Large}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 \title[本科毕设]{基于SVM的LSB信息隐藏算法研究与优化}
 \subtitle{The Study and Improvement of SVM-based LSB Steganography}
-\author[扬州计划]{李欣宜}
+\author[\href{mailto:i@xyli.me}{\faEnvelopeO{ } \textit{i@xyli.me}}]{李欣宜 \\ \href{mailto:i@xyli.me}{\faEnvelopeO{ } \textit{i@xyli.me}}}
 \institute[]{大连理工大学}
 \date{\faCalendar{ } 2016 年 6 月 13 日}
 \subject{毕业设计}
@@ -36,8 +36,15 @@
 
 \begin{frame}{概览}
   \begin{columns}
-    \begin{column}{.5\textwidth}
+    \begin{column}{.3\textwidth}
         \tableofcontents
+    \end{column}
+    \begin{column}{.68\textwidth}
+      \begin{figure}
+        \centering
+        \caption{隐藏信息的自然图像}
+        \includegraphics[width=.8\textwidth]{images/naturepic.png}
+      \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
@@ -210,7 +217,7 @@
   \begin{exampleblock}{原理}
   \begin{description}
     \item[正翻转$F_1$]是像素值在$2i$和$2i+1$间的转换
-    \item[负翻转$F_1$]是像素值在$2i-1$和$2i$间的转换
+    \item[负翻转$F_{-1}$]是像素值在$2i-1$和$2i$间的转换
   \end{description}
   将图像分为小块(组)，自然图像和伪装图像在进行正负翻转后平滑度的变化趋势不同
   \end{exampleblock}
@@ -235,18 +242,18 @@
       \item 根据一些特征判断某个位置是否能安全隐藏消息，实际上是一个SVM分类问题
       \item 隐藏消息的图像块信息也可以作为一个辅助信息隐藏在前几位像素，为了使辅助信息尽量少，选择边长为$\left\lceil {2\sqrt {2l} } \right\rceil$像素的正方形
     \end{itemize}
-    \begin{tikzpicture}[scale=.4]
+    \begin{tikzpicture}[scale=.41]
       \input{images/pix.tikz}
     \end{tikzpicture}
   \end{alertblock}
 \end{frame}
 
 \begin{frame}{引入SVM的隐写系统}
-  \centering
   \begin{tikzpicture}[decoration={
 	 	markings,
 	 	mark=at position 1 with {\arrow[scale=2]{angle 90}};
 	 },scale=0.34]
+   \centering
 	 \input{images/new-stego.tikz}
  \end{tikzpicture}
 \end{frame}
@@ -326,8 +333,7 @@
 	\begin{block}{}
 		\begin{itemize}
 			\item 训练阶段使用嵌入率为5\%-50\%的2000个图像块（在图像数据集中随机抽样）样本训练不同参数的SVM，并使用200个图像样本作为检验集进行调整
-			\item
-			预测阶段使用嵌入率分别为5\%-50\%（步长5\%）的13380样本（1338张图像，每张10个位置）验证SVM的分类准确率，隐写系统在安全方面的提升依赖于SVM的预测准确率。
+			\item 预测阶段使用嵌入率分别为5\%-50\%（步长5\%）的13380样本（1338张图像，每张10个位置）验证SVM的分类准确率，隐写系统在安全方面的提升依赖于SVM的预测准确率。
 		\end{itemize}
 	\end{block}
 \end{frame}
@@ -336,6 +342,7 @@
 \begin{frame}{SVM的训练}
 	使用80组不同参数进行训练，得到的SVM在错误率方面的表现
 	\begin{figure}
+    \centering
 		\includegraphics[width=.9\textwidth]{images/scatter}
 	\end{figure}
 \end{frame}
@@ -346,18 +353,22 @@
 
 \begin{frame}{对抗RS隐写分析}
 	\begin{figure}
+		\centering
 		\includegraphics[width=.9\textwidth]{images/rs_prediction}
 	\end{figure}
+
 \end{frame}
 
 \begin{frame}{对抗SPA}
 	\begin{figure}
+    \centering
 		\includegraphics[width=.9\textwidth]{images/spaprediction}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{$\chi^2$测验}
+\begin{frame}{对抗$\chi^2$测验}
 	\begin{figure}
+    \centering
 		\includegraphics[width=.9\textwidth]{images/chi2prediction}
 	\end{figure}
 \end{frame}

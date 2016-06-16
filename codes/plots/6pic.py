@@ -17,7 +17,10 @@ def convert_message_to_bit(string_text):
 
 secret_text=np.random.randint(256, size=48*6)
 secret_img=reshape(convert_message_to_bit(secret_text),(48,48))
-font = FontProperties(fname=r"c:\\windows\\fonts\\SimSun.ttc", size=14)
+
+mpl.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['axes.unicode_minus']=False
+rcParams["pdf.fonttype"] = 42
 im=imread('F:\\ucid_gray\\00003.png')
 h,w=shape(im)
 x=np.random.randint(h-48, size=6)
@@ -27,11 +30,11 @@ fig = plt.figure()
 
 ax1 = fig.add_subplot(331)
 ax1.imshow(im,cmap='gray')
-ax1.set_title(u'原图像（载体）',fontproperties=font)
+ax1.set_title(u'原图像（载体）')
 
 ax2 = fig.add_subplot(333)
 ax2.imshow(im&1,cmap='binary')
-ax2.set_title(u'原图像的LSB平面',fontproperties=font)
+ax2.set_title(u'原图像的LSB平面')
 
 subimg1=im[x[0]:x[0]+48,y[0]:y[0]+48]
 subimg2=im[x[1]:x[1]+48,y[1]:y[1]+48]
@@ -42,26 +45,26 @@ subimg6=im[x[5]:x[5]+48,y[5]:y[5]+48]
 
 ax3 = fig.add_subplot(334)
 ax3.imshow(subimg1,cmap='gray')
-ax3.set_title(u'位置1',fontproperties=font)
+ax3.set_title(u'位置1')
 
 ax4 = fig.add_subplot(335)
 ax4.imshow(subimg2,cmap='gray')
-ax4.set_title(u'位置2',fontproperties=font)
+ax4.set_title(u'位置2')
 
 ax5 = fig.add_subplot(336)
 ax5.imshow(subimg3,cmap='gray')
-ax5.set_title(u'位置3',fontproperties=font)
+ax5.set_title(u'位置3')
 
 ax6 = fig.add_subplot(337)
 ax6.imshow(subimg4,cmap='gray')
-ax6.set_title(u'位置4',fontproperties=font)
+ax6.set_title(u'位置4')
 
 ax7 = fig.add_subplot(338)
 ax7.imshow(subimg5,cmap='gray')
-ax7.set_title(u'位置5',fontproperties=font)
+ax7.set_title(u'位置5')
 
 ax8 = fig.add_subplot(339)
 ax8.imshow(subimg6,cmap='gray')
-ax8.set_title(u'位置6',fontproperties=font)
+ax8.set_title(u'位置6')
 
 plt.show()

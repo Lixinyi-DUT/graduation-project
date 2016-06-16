@@ -8,6 +8,7 @@ from matplotlib.font_manager import FontProperties
 
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus']=False
+rcParams["pdf.fonttype"] = 42
 font = FontProperties(fname=r"c:\windows\fonts\SimSun.ttc", size=14)
 im=imread('F:\\l.png')
 im2=imread('F:\\graduation-project\\codes\\output\\stego(gray).png')

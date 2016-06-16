@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9) (preloaded format=xelatex 2016.6.16)  16 JUN 2016 02:53
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9) (preloaded format=xelatex 2016.6.16)  17 JUN 2016 00:10
 entering extended mode
 **F:/graduation-project/presentation/main.tex
 (F:/graduation-project/presentation/main.tex
@@ -2145,6 +2145,14 @@ hreplacing.code.tex))
 de.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 26.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\char' on input line 26.
+
 \g__fontspec_family_MicrosoftYaHei_int=\count301
 .................................................
 . fontspec info: "no-font-shape"
@@ -2171,7 +2179,7 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 . NFSS spec.: <->"Microsoft YaHei/BI/OT:script=hani;language=DFLT;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
- (main.aux)
+(main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -2405,10 +2413,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  EU1/lmtt/bx/n --> EU1/lmtt/bx/n on input line 31.
 (main.nav)
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <5> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 31.
+
 Overfull \hbox (1.76442pt too wide) in paragraph at lines 31--31
 [][]  
  []
 
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <8> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 35.
 
 Overfull \hbox (1.76442pt too wide) has occurred while \output is active
 [][] 
@@ -2417,357 +2430,30 @@ Overfull \hbox (1.76442pt too wide) has occurred while \output is active
 [1
 
 ] (main.toc)
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
  (E:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (E:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <8> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 43.
 LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <6> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 43.
-LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <5> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 43.
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 50.
 
+
+LaTeX Font Warning: Font shape `EU1/lmss/m/sc' in size <8> not available
+(Font)              Font shape `EU1/lmr/m/sc' tried instead on input line 50.
+
+
+LaTeX Font Warning: Font shape `EU1/lmss/m/sc' in size <7> not available
+(Font)              Font shape `EU1/lmr/m/sc' tried instead on input line 50.
+
+File: images/naturepic.png Graphic file (type QTm)
+<use  "images/naturepic.png" >
 Overfull \hbox (1.76442pt too wide) has occurred while \output is active
 [][] 
  []
 
 [2
-
-]
-\g__fontspec_family_FangSong_int=\count303
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font FangSong/I (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font FangSong/BI (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font FangSong/I (it probably doesn't exist).
-.................................................
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 61.
-
- (E:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'FangSong(0)' created for font 'FangSong' with options
-. [Script={CJK},AutoFakeBold={4}].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"FangSong/OT:script=hani;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
-. <->"FangSong/OT:script=hani;language=DFLT;embolden=4;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: 
-.................................................
-
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[3
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[4
-
-] (table/lsb.tex)
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[5
-
-] (table/lsb.tex)
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[6
-
-] (table/lsb.tex)
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[7
-
-] (table/lsb.tex)
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[8
-
-]
-File: images/demo1.pdf Graphic file (type QTm)
- <use  "images/demo1.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[9
-
-]
-File: images/gettys.pdf Graphic file (type QTm)
- <use  "images/gettys.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[10
-
-]
-File: images/lsb1.pdf Graphic file (type QTm)
- <use  "images/lsb1.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[11
-
-] (images/key-stego.tikz
-File: icons/email.eps Graphic file (type eps)
- <icons/email.eps>
-File: icons/landscape-image.eps Graphic file (type eps)
- <icons/landscape-image.eps>
-File: icons/house-door-key.eps Graphic file (type eps)
-
-<icons/house-door-key.eps>
-File: icons/house-door-key.eps Graphic file (type eps)
- <icons/house-door-key.eps>
-File: icons/email.eps Graphic file (type eps)
- <icons/email.eps>
-File: icons/landscape-image.eps Graphic file (type eps)
-
-<icons/landscape-image.eps>
-File: icons/landscape-image.eps Graphic file (type eps)
- <icons/landscape-image.eps>)
-Overfull \hbox (13.95166pt too wide) in paragraph at lines 156--156
-[][]  
- []
-
-
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[12
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[13
-
-]
-File: images/hist2.pdf Graphic file (type QTm)
- <use  "images/hist2.pdf" >
-LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 180.
-
-
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[14
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[15
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[16
-
-]
-File: images/rsdemo.pdf Graphic file (type QTm)
- <use  "images/rsdemo.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[17
-
-] (images/pix.tikz)
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[18
-
-] (images/new-stego.tikz
-File: icons/function-mathematical-symbol.eps Graphic file (type eps)
- <icons/function-mathematical-symbol.eps>
-File: icons/email.eps Graphic file (type eps)
-
-<icons/email.eps>
-File: icons/landscape-image.eps Graphic file (type eps)
- <icons/landscape-image.eps>
-File: icons/email.eps Graphic file (type eps)
- <icons/email.eps>
-File: icons/landscape-image.eps Graphic file (type eps)
-
-<icons/landscape-image.eps>
-File: icons/landscape-image.eps Graphic file (type eps)
- <icons/landscape-image.eps>
-File: icons/map.eps Graphic file (type eps)
- <icons/map.eps>)
-Overfull \hbox (23.6203pt too wide) in paragraph at lines 252--252
- [][] 
- []
-
-
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[19
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[20
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[21
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[22
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[23
-
-]
-File: images/scatter.pdf Graphic file (type QTm)
- <use  "images/scatter.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[24
-
-] (table/svmtable.tex
-
-LaTeX Font Warning: Font shape `EU1/lmss/m/sc' in size <8> not available
-(Font)              Font shape `EU1/lmr/m/sc' tried instead on input line 5.
-
-
-LaTeX Font Warning: Font shape `EU1/lmss/m/sc' in size <7> not available
-(Font)              Font shape `EU1/lmr/m/sc' tried instead on input line 5.
-
-LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <7> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 6.
-
-Overfull \hbox (20.72986pt too wide) in paragraph at lines 6--19
- [][][][][] 
- []
-
-)
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[25
-
-]
-File: images/rs_prediction.pdf Graphic file (type QTm)
- <use  "images/rs_prediction.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[26
-
-]
-File: images/spaprediction.pdf Graphic file (type QTm)
- <use  "images/spaprediction.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[27
-
-]
-File: images/chi2prediction.pdf Graphic file (type QTm)
- <use  "images/chi2prediction.pdf" >
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[28
-
-]
-Overfull \hbox (1.76442pt too wide) has occurred while \output is active
-[][] 
- []
-
-[29
-
-]
-\tf@nav=\write8
-\openout8 = `main.nav'.
-
-\tf@toc=\write9
-\openout9 = `main.toc'.
-
-\tf@snm=\write10
-\openout10 = `main.snm'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 371.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 371.
- (main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 371.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 371.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 371.
- )
-(\end occurred when \ifx on line 161 was incomplete) 
-Here is how much of TeX's memory you used:
- 49035 strings out of 428410
- 983074 string characters out of 3163061
- 1066994 words of memory out of 3000000
- 51617 multiletter control sequences out of 15000+200000
- 11480 words of font info for 89 fonts, out of 3000000 for 9000
- 1328 hyphenation exceptions out of 8191
- 63i,20n,85p,10469b,940s stack positions out of 5000i,500n,10000p,200000b,50000s
-
-Output written on main.pdf (29 pages).

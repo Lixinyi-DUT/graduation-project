@@ -10,9 +10,10 @@ from matplotlib.font_manager import FontProperties
 import itertools
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus']=False
+rcParams["pdf.fonttype"] = 42
 marker = itertools.cycle(('^', 'v', '8', 's', 'o','h','s'))
 line= itertools.cycle(('-','--'))
-font=FontProperties(fname=r"c:\\windows\\fonts\\SimSun.ttc", size=14)
+
 data=sio.loadmat('F:\\graduation-project\\codes\\feature_extractor\\data\\acc4.mat')
 accurancy=data['acc']
 em_rate=linspace(5,50,10,endpoint=True);

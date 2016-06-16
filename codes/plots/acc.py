@@ -11,6 +11,7 @@ import itertools
 
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus']=False
+rcParams["pdf.fonttype"] = 42
 
 marker = itertools.cycle(('^', 'v', '8', 's', 'o','h','s'))
 line= itertools.cycle(('-','--'))
