@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9) (preloaded format=xelatex 2016.6.16)  17 JUN 2016 00:10
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9) (preloaded format=xelatex 2016.6.16)  18 JUN 2016 01:37
 entering extended mode
 **F:/graduation-project/presentation/main.tex
 (F:/graduation-project/presentation/main.tex
@@ -2457,3 +2457,391 @@ Overfull \hbox (1.76442pt too wide) has occurred while \output is active
  []
 
 [2
+
+]
+\g__fontspec_family_FangSong_int=\count303
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FangSong/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FangSong/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FangSong/I (it probably doesn't exist).
+.................................................
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 71.
+
+ (E:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FangSong(0)' created for font 'FangSong' with options
+. [Script={CJK},AutoFakeBold={4}].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->"FangSong/OT:script=hani;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
+. <->"FangSong/OT:script=hani;language=DFLT;embolden=4;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+.................................................
+
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[3
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[5
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[7
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[8
+
+] (table/lsb.tex)
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[9
+
+] (table/lsb.tex)
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[10
+
+] (table/lsb.tex)
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11
+
+] (table/lsb.tex)
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[12
+
+]
+File: images/demo1.pdf Graphic file (type QTm)
+ <use  "images/demo1.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[13
+
+]
+File: images/gettys.pdf Graphic file (type QTm)
+ <use  "images/gettys.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
+
+]
+File: images/gettys.pdf Graphic file (type QTm)
+ <use  "images/gettys.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
+
+]
+File: images/gettys.pdf Graphic file (type QTm)
+ <use  "images/gettys.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[16
+
+]
+File: images/lsb1.pdf Graphic file (type QTm)
+ <use  "images/lsb1.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[17
+
+]
+File: images/lsb1.pdf Graphic file (type QTm)
+ <use  "images/lsb1.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[18
+
+] (images/key-stego.tikz
+File: icons/email.eps Graphic file (type eps)
+ <icons/email.eps>
+File: icons/landscape-image.eps Graphic file (type eps)
+ <icons/landscape-image.eps>
+File: icons/house-door-key.eps Graphic file (type eps)
+
+<icons/house-door-key.eps>
+File: icons/house-door-key.eps Graphic file (type eps)
+ <icons/house-door-key.eps>
+File: icons/email.eps Graphic file (type eps)
+ <icons/email.eps>
+File: icons/landscape-image.eps Graphic file (type eps)
+
+<icons/landscape-image.eps>
+File: icons/landscape-image.eps Graphic file (type eps)
+ <icons/landscape-image.eps>)
+Overfull \hbox (13.95166pt too wide) in paragraph at lines 170--170
+[][]  
+ []
+
+
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[19
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[20
+
+]
+File: images/hist2.pdf Graphic file (type QTm)
+ <use  "images/hist2.pdf" >
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 194.
+
+
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[21
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[22
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[23
+
+]
+File: images/rsdemo.pdf Graphic file (type QTm)
+ <use  "images/rsdemo.pdf" >
+Overfull \vbox (28.90953pt too high) detected at line 235
+ []
+
+
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[24
+
+] (images/pix.tikz)
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[25
+
+] (images/new-stego.tikz
+File: icons/function-mathematical-symbol.eps Graphic file (type eps)
+ <icons/function-mathematical-symbol.eps>
+File: icons/email.eps Graphic file (type eps)
+
+<icons/email.eps>
+File: icons/landscape-image.eps Graphic file (type eps)
+ <icons/landscape-image.eps>
+File: icons/email.eps Graphic file (type eps)
+ <icons/email.eps>
+File: icons/landscape-image.eps Graphic file (type eps)
+
+<icons/landscape-image.eps>
+File: icons/landscape-image.eps Graphic file (type eps)
+ <icons/landscape-image.eps>
+File: icons/map.eps Graphic file (type eps)
+ <icons/map.eps>)
+Overfull \hbox (23.6203pt too wide) in paragraph at lines 266--266
+[][]  
+ []
+
+
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[26
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[27
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[28
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[30
+
+]
+File: images/scatter.pdf Graphic file (type QTm)
+ <use  "images/scatter.pdf" >
+Overfull \vbox (8.79237pt too high) detected at line 355
+ []
+
+
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[31
+
+] (table/svmtable.tex
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <7> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 6.
+
+Overfull \hbox (20.72986pt too wide) in paragraph at lines 6--19
+ [][][][][] 
+ []
+
+)
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[32
+
+]
+File: images/rs_prediction.pdf Graphic file (type QTm)
+ <use  "images/rs_prediction.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[33
+
+]
+File: images/spaprediction.pdf Graphic file (type QTm)
+ <use  "images/spaprediction.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[34
+
+]
+File: images/chi2prediction.pdf Graphic file (type QTm)
+ <use  "images/chi2prediction.pdf" >
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[35
+
+]
+Overfull \hbox (1.76442pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[36
+
+]
+\tf@nav=\write8
+\openout8 = `main.nav'.
+
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+\tf@snm=\write10
+\openout10 = `main.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+ (main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
+ )
+(\end occurred when \ifx on line 161 was incomplete) 
+Here is how much of TeX's memory you used:
+ 49060 strings out of 428410
+ 984499 string characters out of 3163061
+ 1067510 words of memory out of 3000000
+ 51640 multiletter control sequences out of 15000+200000
+ 11480 words of font info for 89 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 63i,20n,85p,10469b,940s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on main.pdf (36 pages).
