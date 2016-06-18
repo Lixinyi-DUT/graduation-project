@@ -5,9 +5,9 @@
 \beamer@sectionintoc {2}{LSB隐写实现和缺陷分析}{9}{0}{2}
 \beamer@subsectionintoc {2}{1}{LSB隐写研究}{9}{0}{2}
 \beamer@subsectionintoc {2}{2}{隐写分析}{17}{0}{2}
-\beamer@sectionintoc {3}{基于SVM的优化}{25}{0}{3}
-\beamer@subsectionintoc {3}{1}{隐写方法设计}{25}{0}{3}
-\beamer@subsectionintoc {3}{2}{SVM的训练和预测}{27}{0}{3}
-\beamer@sectionintoc {4}{实验与结果}{30}{0}{4}
-\beamer@subsectionintoc {4}{1}{实验环境}{30}{0}{4}
-\beamer@subsectionintoc {4}{2}{实验结果}{31}{0}{4}
+\beamer@sectionintoc {3}{基于SVM的优化}{34}{0}{3}
+\beamer@subsectionintoc {3}{1}{隐写方法设计}{34}{0}{3}
+\beamer@subsectionintoc {3}{2}{SVM的训练和预测}{36}{0}{3}
+\beamer@sectionintoc {4}{实验与结果}{39}{0}{4}
+\beamer@subsectionintoc {4}{1}{实验环境}{39}{0}{4}
+\beamer@subsectionintoc {4}{2}{实验结果}{40}{0}{4}
