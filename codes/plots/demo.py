@@ -8,6 +8,7 @@ from matplotlib.font_manager import FontProperties
 
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus']=False
+rcParams["pdf.fonttype"] = 42
 im=imread('F:\\l.png')
 
 fig = plt.figure()

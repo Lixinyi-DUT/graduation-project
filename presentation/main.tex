@@ -2,18 +2,15 @@
 % coding=utf-8
 \documentclass[14pt]{Bredelebeamer}
 \usepackage{ctex}
-%\usepackage{beamerthemesplit}
 \usepackage{fontawesome}
 \usepackage{multirow}
 \usepackage{booktabs}
 \usepackage{graphicx}
-%\usepackage[framemethod=tikz]{mdframed}
 \usepackage{tikz}
 \usepackage{epstopdf}
 \usetikzlibrary{arrows,decorations.markings}
 \usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{calc}
-\renewcommand{\today}{2016 年 6 月 14 日}
  \setbeamerfont{title}{size=\LARGE}
  \setbeamerfont{subtitle}{size=\LARGE}
  \setbeamerfont{institute}{size=\large}
@@ -173,9 +170,11 @@
     \item 秘钥隐写系统对双方的通信资源要求较高
     \item 存在可以攻破随机位置隐写的LSB图像分析方法
       \end{itemize}
+      \pause
     \begin{block}{经典的LSB图像分析方法}
 
       本文中实现了这些方法用于评估伪装图像的安全性
+      \pause
   \begin{itemize}
     \item $\chi^2$检测
     \item 样本对分析（SPA）
@@ -196,11 +195,11 @@
   \begin{exampleblock}{原理}
   由于LSB修改的过程实际可用看做像素值$2i$与$2i+1$间的变换，相比自然图像，秘密消息的嵌入使得值对$\left( 2i , 2i+1\right)$间的分布更接近均匀分布。
 \end{exampleblock}
-
+\pause
 \begin{block}{实现方法}
   计算
   $${S_{PoV}} = \sum\limits_{i = 0}^{127} {\frac{{{{\left[ {{h_{2i}} - \frac{1}{2}\left( {{h_{2i}} + {h_{2i + 1}}} \right)} \right]}^2}}}{{\frac{1}{2}\left( {{h_{2i}} + {h_{2i + 1}}} \right)}}}$$
-  查询$\chi^2$分布表我们可以计算对应的$p$值，用以度量图像为伪装图像的概率，根据$p$值大小决定该图像是否包含隐藏消息。
+  查询$\chi^2$分布表我们可以计算对应的\alert<3>{$p$值}，用以度量图像为伪装图像的概率，根据\alert<3>{$p$值}大小决定该图像是否包含隐藏消息。
 \end{block}
 \end{frame}
 
@@ -208,7 +207,7 @@
   \begin{exampleblock}{原理}
     在LSB嵌入后，我们可以获得一个描述变多重集合间转换的有限状态机。统计样本对频率可以分析得到消息长度。
   \end{exampleblock}
-
+\pause
   \begin{block}{实现方法}
     解方程估算秘密消息的长度
     $$\begin{aligned}
@@ -221,12 +220,15 @@
 
 \begin{frame}{RS隐写分析}
   \begin{exampleblock}{原理}
+    \pause
   \begin{description}
     \item[正翻转$F_1$]是像素值在$2i$和$2i+1$间的转换
     \item[负翻转$F_{-1}$]是像素值在$2i-1$和$2i$间的转换
   \end{description}
+  \pause
   将图像分为小块(组)，自然图像和伪装图像在进行正负翻转后平滑度的变化趋势不同
   \end{exampleblock}
+  \pause
   \begin{figure}
     \centering
     \includegraphics[width=.75\textwidth]{images/rsdemo}
@@ -237,17 +239,23 @@
 \subsection{隐写方法设计}
 \begin{frame}{可行性与优化目标}
   \begin{block}{应用场景假设}
+    \pause
     \begin{itemize}
       \item 无法获得安全信道交换秘钥
       \item 但可以预先约定少量信息
     \end{itemize}
   \end{block}
+  \pause
   \begin{alertblock}{思考}
     \begin{itemize}
+      \pause
       \item 选择合适的位置（图像块）可以在一定程度上抵抗隐写分析
+      \pause
       \item 根据一些特征判断某个位置是否能安全隐藏消息，实际上是一个SVM分类问题
+      \pause
       \item 隐藏消息的图像块信息也可以作为一个辅助信息隐藏在前几位像素，为了使辅助信息尽量少，选择边长为$\left\lceil {2\sqrt {2l} } \right\rceil$像素的正方形
     \end{itemize}
+    \pause
     \begin{tikzpicture}[scale=.41]
       \input{images/pix.tikz}
     \end{tikzpicture}
@@ -269,26 +277,31 @@
 \begin{frame}{支持向量机（SVM）}
 	\begin{block}{样本集}
 		容量为$N$的训练样本集$D = \left\{ {\left( {{{\mathbf{x}}_1},{y_1}} \right),\left( {{{\mathbf{x}}_2},{y_2}} \right), \ldots \left( {{{\mathbf{x}}_N},{y_N}} \right)} \right\}$
+    \pause
 		\begin{itemize}
 			\item 特征向量${\mathbf{x}_i}$为图像块的特征
+      \pause
 			\item 标签$y_i \in \left\{ -1,1\right\}$为安全评估结果，在训练集中由隐写方法评估得到，在使用隐写系统时预测结果作为选择位置的参考指标
 		\end{itemize}
 	\end{block}
-
+\pause
 	\begin{alertblock}{SVM分类器}
 			\begin{columns}
 			\begin{column}{.5\textwidth}
-		追求最大“间隔”的分类
+		追求最大\alert<4>{“间隔”}的分类
 		$$
 		\begin{aligned}
-		\mathop {\max }\limits_{{\mathbf{w}},b} & \quad\frac{2}{{\left\| {\mathbf{w}} \right\|}} \\
+		\mathop {\max }\limits_{{\mathbf{w}},b} & \quad\frac{2}{{\left\| {\alert<4>{\mathbf{w}}} \right\|}} \\
 		s.t. &\quad {y_i}  \left( {{{\mathbf{w}}^T}{\mathbf{x_i}} + b} \right) \ge 1,i = 1,2, \ldots ,N
 		\end{aligned}$$
 			\end{column}
+      \pause
 					\begin{column}{.41\textwidth}
 						过度拟合\&线性不可分
 						\begin{itemize}
+              \pause
 							\item 核函数：变换特征空间至高维
+              \pause
 							\item 软间隔：以权重$C$容忍分类错误
 						\end{itemize}
 						\end{column}
@@ -297,28 +310,32 @@
 \end{frame}
 
 \begin{frame}{特征选择}
+  \pause
 	\begin{exampleblock}{方差}
 		表示图像块像素值的离散程度
 		$${\mathop{var}} \left( B \right) = \frac{{\sum\limits_{i = 1}^m {\sum\limits_{j = 1}^n {\left( {{x_{i,j}} - \bar x} \right)} } }}{{m \cdot n - 1}}$$
 	\end{exampleblock}
 
+\pause
 	\begin{alertblock}{整体差异度}
 		图像块与整个载体在像素值分布方面的差异
 		$${D_{B,I}} =\sum\limits_{i = 0}^{255} {{{\left[ {fre{{\left( B \right)}_i} - fre{{\left( I \right)}_i}} \right]}^2}}$$
-		图像块是否“突出”
+		图像块是否\alert{“突出”}
 	\end{alertblock}
 \end{frame}
 
 \begin{frame}{特征选择}
+  \pause
 	\begin{block}{sc匹配度}
 	图像块的LSB平面与秘密消息的LSB平面的匹配程度
 	$$sc\_match = \frac{{\sum\limits_{i = 1}^{8l} {p\left( {{M_{Binary}}\left( i \right) = {B_{LSB}}\left( i \right)} \right)} }}{{8l}}$$
 	\end{block}
 
+\pause
 	\begin{exampleblock}{平滑度}
 		沿用RS隐写分析中的平滑度定义并加以扩充完善，表示邻接像素之间的差异程度
 	，邻接像素为所有方向上的邻接像素
-	$${S_i} = \left\{ {x_{i \leftarrow}},{x_{i \to }},{x_{i \uparrow }},{x_{i \downarrow}}\right\}$$
+$${S_i} = \left\{ {{x_{i \leftarrow }},{x_{i \to }},{x_{i \uparrow }},{x_{i \downarrow }},{x_{i \nearrow }},{x_{i \swarrow }},{x_ \nwarrow },{x_{i \searrow }}} \right\}$$
 	提出使用\exemple{矩阵偏移}的方法避免重复并提高了计算效率
 	$$A{D_ \to } = \left| {B\left( {\left( {1,1} \right),\left( {m,n - 1} \right)} \right) - B\left( {\left( {1,2} \right),\left( {m,n} \right)} \right)} \right|$$
 	\end{exampleblock}
@@ -333,9 +350,11 @@
 	\begin{description}
 		\item[Windows10] 操作系统
 		\item[MATLAB2015b] 主要的图像处理、数据计算平台和语言
+    \item[LIBSVM3.21] 辅助完成SVM训练和预测的MATLAB工具箱
 		\item[Python3.5] 完成了一些数据预处理、收集和绘制图像的任务
-		\item[UCID] 图像数据集，包含1338张彩色图像，为方便处理在实验中全部转换为灰度图像
+		\item[UCID\footnote{\url{http://homepages.lboro.ac.uk/~cogs/datasets/UCID/ucid.html}}] 图像数据集，包含1338张彩色图像，为方便处理在实验中全部转换为灰度图像
 	\end{description}
+  \pause
 	\begin{block}{}
 		\begin{itemize}
 			\item 训练阶段使用嵌入率为5\%-50\%的2000个图像块（在图像数据集中随机抽样）样本训练不同参数的SVM，并使用200个图像样本作为检验集进行调整

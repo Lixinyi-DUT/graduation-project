@@ -26,52 +26,52 @@
 \headcommand {\beamer@framepages {17}{18}}
 \headcommand {\slideentry {2}{2}{2}{19/28}{隐写分析}{0}}
 \headcommand {\beamer@framepages {19}{28}}
-\headcommand {\slideentry {2}{2}{3}{29/29}{隐写分析}{0}}
-\headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {2}{2}{4}{30/30}{隐写分析}{0}}
-\headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {2}{2}{5}{31/31}{隐写分析}{0}}
-\headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {2}{2}{6}{32/32}{隐写分析}{0}}
+\headcommand {\slideentry {2}{2}{3}{29/31}{隐写分析}{0}}
+\headcommand {\beamer@framepages {29}{31}}
+\headcommand {\slideentry {2}{2}{4}{32/32}{隐写分析}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {2}{2}{7}{33/33}{隐写分析}{0}}
-\headcommand {\beamer@framepages {33}{33}}
-\headcommand {\sectionentry {3}{基于SVM的优化}{34}{基于SVM的优化}{0}}
-\headcommand {\beamer@sectionpages {9}{33}}
-\headcommand {\beamer@subsectionpages {17}{33}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{34}{隐写方法设计}}\headcommand {\beamer@subsectionpages {34}{33}}
-\headcommand {\slideentry {3}{1}{1}{34/34}{隐写方法设计}{0}}
-\headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {3}{1}{2}{35/35}{隐写方法设计}{0}}
-\headcommand {\beamer@framepages {35}{35}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{36}{SVM的训练和预测}}\headcommand {\beamer@subsectionpages {34}{35}}
-\headcommand {\slideentry {3}{2}{1}{36/36}{SVM的训练和预测}{0}}
-\headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{2}{2}{37/37}{SVM的训练和预测}{0}}
-\headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {3}{2}{3}{38/38}{SVM的训练和预测}{0}}
-\headcommand {\beamer@framepages {38}{38}}
-\headcommand {\sectionentry {4}{实验与结果}{39}{实验与结果}{0}}
-\headcommand {\beamer@sectionpages {34}{38}}
-\headcommand {\beamer@subsectionpages {36}{38}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{39}{实验环境}}\headcommand {\beamer@subsectionpages {39}{38}}
-\headcommand {\slideentry {4}{1}{1}{39/39}{实验环境}{0}}
-\headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{40}{实验结果}}\headcommand {\beamer@subsectionpages {39}{39}}
-\headcommand {\slideentry {4}{2}{1}{40/40}{实验结果}{0}}
-\headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {4}{2}{2}{41/41}{实验结果}{0}}
-\headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {4}{2}{3}{42/42}{实验结果}{0}}
-\headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {4}{2}{4}{43/43}{实验结果}{0}}
-\headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {4}{2}{5}{44/44}{实验结果}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {4}{2}{6}{45/45}{实验结果}{0}}
-\headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@partpages {1}{45}}
-\headcommand {\beamer@subsectionpages {40}{45}}
-\headcommand {\beamer@sectionpages {39}{45}}
-\headcommand {\beamer@documentpages {45}}
+\headcommand {\slideentry {2}{2}{5}{33/35}{隐写分析}{0}}
+\headcommand {\beamer@framepages {33}{35}}
+\headcommand {\slideentry {2}{2}{6}{36/37}{隐写分析}{0}}
+\headcommand {\beamer@framepages {36}{37}}
+\headcommand {\slideentry {2}{2}{7}{38/41}{隐写分析}{0}}
+\headcommand {\beamer@framepages {38}{41}}
+\headcommand {\sectionentry {3}{基于SVM的优化}{42}{基于SVM的优化}{0}}
+\headcommand {\beamer@sectionpages {9}{41}}
+\headcommand {\beamer@subsectionpages {17}{41}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{42}{隐写方法设计}}\headcommand {\beamer@subsectionpages {42}{41}}
+\headcommand {\slideentry {3}{1}{1}{42/54}{隐写方法设计}{0}}
+\headcommand {\beamer@framepages {42}{54}}
+\headcommand {\slideentry {3}{1}{2}{55/57}{隐写方法设计}{0}}
+\headcommand {\beamer@framepages {55}{57}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{58}{SVM的训练和预测}}\headcommand {\beamer@subsectionpages {42}{57}}
+\headcommand {\slideentry {3}{2}{1}{58/64}{SVM的训练和预测}{0}}
+\headcommand {\beamer@framepages {58}{64}}
+\headcommand {\slideentry {3}{2}{2}{65/67}{SVM的训练和预测}{0}}
+\headcommand {\beamer@framepages {65}{67}}
+\headcommand {\slideentry {3}{2}{3}{68/70}{SVM的训练和预测}{0}}
+\headcommand {\beamer@framepages {68}{70}}
+\headcommand {\sectionentry {4}{实验与结果}{71}{实验与结果}{0}}
+\headcommand {\beamer@sectionpages {42}{70}}
+\headcommand {\beamer@subsectionpages {58}{70}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{71}{实验环境}}\headcommand {\beamer@subsectionpages {71}{70}}
+\headcommand {\slideentry {4}{1}{1}{71/72}{实验环境}{0}}
+\headcommand {\beamer@framepages {71}{72}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{73}{实验结果}}\headcommand {\beamer@subsectionpages {71}{72}}
+\headcommand {\slideentry {4}{2}{1}{73/73}{实验结果}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\slideentry {4}{2}{2}{74/74}{实验结果}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\slideentry {4}{2}{3}{75/75}{实验结果}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\slideentry {4}{2}{4}{76/76}{实验结果}{0}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\slideentry {4}{2}{5}{77/77}{实验结果}{0}}
+\headcommand {\beamer@framepages {77}{77}}
+\headcommand {\slideentry {4}{2}{6}{78/78}{实验结果}{0}}
+\headcommand {\beamer@framepages {78}{78}}
+\headcommand {\beamer@partpages {1}{78}}
+\headcommand {\beamer@subsectionpages {73}{78}}
+\headcommand {\beamer@sectionpages {71}{78}}
+\headcommand {\beamer@documentpages {78}}
 \headcommand {\def \inserttotalframenumber {26}}
